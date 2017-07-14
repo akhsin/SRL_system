@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forgot Password</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/app.css">
@@ -18,14 +18,16 @@
     <div class="login-page">
         <div class="au-form">
             <form class="register-form">
-                <h5> FORGOT PASSWORD </h5>
-                <P> Enter you email address and we'll send you a link to reset your password </p>
-                <label> Email
-                    <input type="email" placeholder="contoh@mail.ugm.ac.id" />
+                <h5> MASUK </h5>
+                <label>NIU
+                    <input type="text" placeholder="xxxxxx" required pattern="number" />
+                </label>
+                <label>Password
+                    <input type="password" placeholder="******" required/>
                 </label>
                 <div class="expanded button-group">
-                    <a class="hollow button success" href="login.html">CANCEL</a>
-                    <a class="button success">SEND</a>
+                    <a class="button au-button third" href="forgot-password.html">Lupa Password?</a>
+                    <a class="button success">MASUK</a>
                 </div>
             </form>
         </div>

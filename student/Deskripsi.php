@@ -41,10 +41,13 @@
                 <div class="row main-wrapper rounded">
                     <div class="columns main-wrapper rounded shadow">
                         <div class="page heading">
-                            <h2>Rencana Program Kegiatan Pembelajaran Semester (RPKPS)</h2>
+                            <h2 align="center">Rencana Program Kegiatan Pembelajaran Semester (RPKPS)</h2>
+                            <div class="callout">
                             <h5>Deskripsi Singkat Mata Kuliah</h5>
                             <p> Mata kuliah ini mempelajari tentang paradigma pemrograman, pengertian algoritma, syarat-syarat algoritma, flowchart dan pseudocode, kompleksitas waktu eksekusi, iterasi dan rekursi. Sebagai konsep yang mendasari struktur data, dipelajari representasi data, tipe data, deklarasi variabel, deklarasi tipe data dengan ADT, alokasi memori dan struktur, deklarasi struktur, union, struktur data satu dimensi, dua dimensi dan tiga dimensi. Stack & Queue serta implementasinya. </p>
                             <p> Selanjutnya diberikan pelajaran macam –macam struktur data yaitu : struktur list tunggal, struktur list doubly, struktur list circular, struktur array, struktur pohon dan struktur graph. Update data (sisipkan dan hapus data) bagi berbagai model struktur data juga dipelajari di sini. Selanjutnya diberikan pemahaman tentang berbagai algoritma sorting dan unjukkerja masing-masing algoritma itu. Berbagai algoritma searching dan unjukkerjanya dipelajari di sini secara lebih mendalam untuk mendasari implementasi struktur data dalam sistem basis data. </p>
+                            </div>
+                            <div class="callout primary">
                             <h5>Tujuan Pembelajaran</h5>
                             <p> Dengan mempelajari Algoritma dan Struktur Data ini, diharapkan : </p>
                             <ol>
@@ -54,6 +57,8 @@
                                 <li> Mahasiswa dapat memahami berbagai macam algoritma sorting data dan unjukkerjanya masing-masing algoritma itu. </li>
                                 <li> Mahasiswa dapat memahami dan mengimplementasikan dalam program berbagai algoritma searchig data dan unjukkerjanya masing-masing. </li>
                             </ol>
+                            </div>
+                            <div class="callout">
                             <h5>Materi Pembelajaran</h5>
                             <ul>
                                 <li>Teknik Pemrograman</li>
@@ -66,6 +71,7 @@
                                 <li>Searching</li>
                                 <li>Struktur Data Graph</li>
                             </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

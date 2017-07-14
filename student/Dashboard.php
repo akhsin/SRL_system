@@ -48,7 +48,8 @@
                                 <div class="top-bar">
                                     <div class="small-12 large-9 columns">
                                         <h4>Notifikasi</h4>
-                                        <h6 class="balance"> 1. Anda belum mengikuti MAI tes</h6>
+                                        <h6 class="balance">
+                                        <span class="warning badge"> 1. </span> Anda belum mengikuti MAI tes</h6>
                                     </div>
                                     <div class="small-12 large-3 columns top space">
                                         <a href="#" class="button expanded success"> MAI tes sekarang </a>

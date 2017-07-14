@@ -21,12 +21,12 @@
                 <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon dark" type="button" data-toggle></button>
     </span>
-                <strong>Meta-Cognitive Training System</strong>
+                <strong>SRL Training System</strong>
             </div>
             <div id="responsive-menu">
                 <div class="top-bar-right">
                     <ul class="dropdown menu" data-dropdown-menu>
-                        <li><a href="Beranda.html">Beranda</a></li>
+                        <li><a href="Index.html">Beranda</a></li>
                         <li><a href="Deskripsi.html">Deskripsi</a></li>
                         <li><a href="Panduan.html">Panduan Sistem</a></li>
                         <li><a href="Contact.html">Kontak</a></li>
@@ -42,7 +42,7 @@
             <h2 class="motto"> SRL Membuat Belajar Menjadi Lebih Mudah dan Efektif.</h2>
             <div class="white-text">
             <h4 class="welcome">  Selamat Datang di Pembelajaran Mata-kuliah Algoritma dan Struktur Data</h4>
-            <h6>  Dalam pembelajaran on-line ini terdapat banyak pilihan cara belajar yang disesuaikan dengan kemampuan dan gaya belajar mahasiswa (<i>Self-Regulation Learning</i>)</h6>
+            <h6>  Dalam pembelajaran daring ini terdapat banyak pilihan belajar yang disesuaikan dengan kemampuan dan gaya belajar mahasiswa <br> (<i>Self-Regulation Learning</i>)</h6>
             </div>
             <div class="row">
                 <div class="hide-for-small large-4 columns"> &nbsp;</div>
@@ -63,7 +63,7 @@
     <!-- Second-header -->
     <div class="second-header">
         <div class="row">
-            <h2> Aspek Metakognisi </h2>
+            <h2> Self-Regulated Learning </h2>
             <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet <a href="Panduan.html"> baca selengkapnya </a> </p>
         </div>
     </div>
@@ -114,18 +114,16 @@
                 <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p>
             </div>
             <div class="small-12 large-4 columns">
-                <h5> Drop Us Line: </h5>
+                <h5> Contact Admin </h5>
                 <hr/>
                 <from class="drop-us">
-                    <label> Nama
+                    <label> NIU
                         <input type="text" name="name"> </input>
                     </label>
-                    <label> E-mail
-                        <input type="email" name="drop-email"> </input>
+                    <label> Message
+                        <textarea name="drop-text" rows="1" cols="25"> </textarea>
                     </label>
-                    <label> Your Response
-                        <input type="text-area" name="drop-text"> </input>
-                    </label>
+                    <input type="submit" value="kirim" class="tiny button" />
                 </from>
             </div>
         </div>
