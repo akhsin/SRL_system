@@ -90,9 +90,9 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>1</code></td>
+                                        <td><code>49</code></td>
                                         <td>
-                                            Saya bertanya kepada diri sendiri "Apakah Saya Sudah Mencapai Tujuan Saya?", Ketika sedang berupaya mencapai tujuan secara  intensif.
+                                            Saya bertanya kepada diri sendiri tentang seberapa baik saya bekerja, pada waktu mempelajari sesuatu hal yang baru.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -106,9 +106,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>2</code></td>
+                                        <td><code>50</code></td>
                                         <td>
-                                            Saya Mempertimbangkan Berbagai Pilihan Sebelum Saya Menyelesaikan Sebuah Permasalahan
+                                        Saya bertanya kepada diri sendiri apakah saya belajar sebanyak yang saya mampu, setiap kali saya menyelesaikan tugas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -122,9 +122,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>3</code></td>
+                                        <td><code>51</code></td>
                                         <td>
-                                            Saya coba menggunakan cara-cara yang pernah saya pakai sebelumnya
+                                       Saya melupakan informasi baru yang tidak jelas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -138,9 +138,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><code>4</code></td>
+                                        <td><code>52</code></td>
                                         <td>
-                                            Saya terus menerus mengatur diri selama belajar agar memiliki waktu yang cukup.
+                                            Saya berhenti dan selanjutnya membaca kembali jika saya bingung.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -153,83 +153,20 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td><code>5</code></td>
-                                        <td>
-                                            Saya memahami kekuatan dan kelemahan kecerdasan saya.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="5" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="5">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>6</code></td>
-                                        <td>
-                                            Saya berpikir tentang apa yang sebenarnya perlu saya pelajari sebelum mengerjakan tugas.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="6" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="6">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>7</code></td>
-                                        <td>
-                                            Saya menyadari bagaimana baiknya saya menyelesaikan suatu tes.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="yes-no">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>8</code></td>
-                                        <td>
-                                            Saya menyusun tujuan-tujuan khusus sebelum saya mengerjakan tugas.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="yes-no">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </tbody>
                             </table>
                             <ul class="pagination text-center" role="navigation" aria-label="Pagination" id="page-selection">
-                                <li class="pagination-previous disabled">Previous</li>
-                                <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-                                <li><a href="#" aria-label="Page 2">2</a></li>
-                                <li><a href="#" aria-label="Page 3">3</a></li>
-                                <li><a href="#" aria-label="Page 4">4</a></li>
-                                <li><a href="#" aria-label="Page 5">5</a></li>
-                                <li><a href="#" aria-label="Page 6">6</a></li>
-                                <li><a href="#" aria-label="Page 7">7</a></li>
-                                <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-                            </ul>
+                                <li class="pagination-previous"><a href="#" aria-label="Previous page">Previous</a></li>
+                                <li><a href="1-MAI-1.php" aria-label="Page 1">1</a></li>
+                                <li><a href="1-MAI-2.php" aria-label="Page 2">2</a></li>
+                                <li><a href="1-MAI-3.php" aria-label="Page 4">3</a></li>
+                                <li><a href="1-MAI-4.php" aria-label="Page 4">4</a></li>
+                                <li><a href="1-MAI-5.php" aria-label="Page 5">5</a></li>
+                                <li><a href="1-MAI-7.php" aria-label="Page 6">6</a></li>
+                                <li class="current"><span class="show-for-sr">You are on page</span>7</a></li>
+                                <li class="pagination-next disabled">Next</li>
+                                </ul>
+                                <a class="pagination-next button expanded success">Submit</a>
                         </div>
                     </div>
                 </div>
