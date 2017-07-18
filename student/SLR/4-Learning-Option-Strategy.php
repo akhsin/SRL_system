@@ -6,12 +6,17 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6-Learning Evaluation - Students</title>
+    <title>4. Learning Option Strategy - Students</title>
     <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/app.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/timeline.css">
     <meta class="foundation-mq">
+    <style type="text/css">
+    .page.heading a.button {
+        float: left;
+    }
+    </style>
 </head>
 
 <body>
@@ -60,11 +65,11 @@
                                         Learning Strategy Option
                                         <span class="details">Description of point 4</span>
                                     </li>
-                                    <li class="timeline done">
+                                    <li class="timeline">
                                         Adaptive-Learning Materials
                                         <span class="details">Description of point 5</span>
                                     </li>
-                                    <li class="timeline done">
+                                    <li class="timeline">
                                         Learning Evaluation
                                         <span class="details">Description of point 6</span>
                                     </li>
@@ -78,42 +83,83 @@
                     </div>
                     <div class="columns main-wrapper rounded shadow">
                         <div class="page heading">
-                            <h2 style="display: block;" align="center">Learning Evaluation: Stack </h2>
-                            <hr width="75%"/>
-                            <ol>
-                                <li>Pertanyaan Pertama</li>
-                                <fieldset>
-                                <input id="jawabanA" type="radio" name="soal1" value="A"><label for="struktur-data">Jawaban A</label>
-                                <input id="jawabanB" type="radio" name="soal1" value="B"><label for="struktur-data">Jawaban B</label>
-                                <input id="jawabanC" type="radio" name="soal1" value="C"><label for="struktur-data">Jawaban C</label>
-                                <input id="jawabanD" type="radio" name="soal1" value="D"><label for="struktur-data">Jawaban D</label>
-                                </fieldset>
-                                <li>Pertanyaan Kedua</li>
-                                <fieldset>
-                                <input id="jawabanA" type="radio" name="soal2" value="A"><label for="struktur-data">Jawaban A</label>
-                                <input id="jawabanB" type="radio" name="soal2" value="B"><label for="struktur-data">Jawaban B</label>
-                                <input id="jawabanC" type="radio" name="soal2" value="C"><label for="struktur-data">Jawaban C</label>
-                                <input id="jawabanD" type="radio" name="soal2" value="D"><label for="struktur-data">Jawaban D</label>
-                                </fieldset>
-                                 <li>Pertanyaan Ketiga</li>
-                                <fieldset>
-                                <input id="jawabanA" type="radio" name="soal3" value="A"><label for="struktur-data">Jawaban A</label>
-                                <input id="jawabanB" type="radio" name="soal3" value="B"><label for="struktur-data">Jawaban B</label>
-                                <input id="jawabanC" type="radio" name="soal3" value="C"><label for="struktur-data">Jawaban C</label>
-                                <input id="jawabanD" type="radio" name="soal3" value="D"><label for="struktur-data">Jawaban D</label>
-                                 <li>Pertanyaan Keempat</li>
-                                <fieldset>
-                                <input id="jawabanA" type="radio" name="soal4" value="A"><label for="struktur-data">Jawaban A</label>
-                                <input id="jawabanB" type="radio" name="soal4" value="B"><label for="struktur-data">Jawaban B</label>
-                                <input id="jawabanC" type="radio" name="soal4" value="C"><label for="struktur-data">Jawaban C</label>
-                                <input id="jawabanD" type="radio" name="soal4" value="D"><label for="struktur-data">Jawaban D</label>
-                                <li>Pertanyaan Kelima</li>
-                                <fieldset>
-                                <input id="jawabanA" type="radio" name="soal5" value="A"><label for="struktur-data">Jawaban A</label>
-                                <input id="jawabanB" type="radio" name="soal5" value="B"><label for="struktur-data">Jawaban B</label>
-                                <input id="jawabanC" type="radio" name="soal5" value="C"><label for="struktur-data">Jawaban C</label>
-                                <input id="jawabanD" type="radio" name="soal5" value="D"><label for="struktur-data">Jawaban D</label>
-                            </ol>
+                            <h2 style="display: block;" align="center">Pilih Strategy Belajar: Stack</h2>
+                            <table class="projects table">
+                                <thead>
+                                    <tr>
+                                        <th width="10%">Ambil ?</th>
+                                        <th>Strategy</th>
+                                        <th width="10%"> Rekomendasi </th>
+                                        <th width="25%"> Rekomendasi Kesulitan </th>
+                                        <th>Tingkat Kesulitan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input id="control-video" type="checkbox">
+                                        </td>
+                                        <td>
+                                            <a class="button primary hollow">Control Video</a>
+                                        </td>
+                                        <td>
+                                            <span class="label success"> Ambil </span>
+                                        </td>
+                                        <td>
+                                            <span class="label warning"> Sedang </span>
+                                        </td>
+                                        <td>
+                                            <select name="control-video">
+                                                <option value="mudah">Mudah</option>
+                                                <option value="sedang">Sedang</option>
+                                                <option value="sulit">Sulit</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="Summary" type="checkbox">
+                                        </td>
+                                        <td>
+                                            <a class="button primary hollow">Summary</a>
+                                        </td>
+                                        <td>
+                                            <span class="label success"> Ambil </span>
+                                        </td>
+                                        <td>
+                                            <span class="label warning"> Sedang </span>
+                                        </td>
+                                        <td>
+                                            <select name="Summary">
+                                                <option value="mudah">Mudah</option>
+                                                <option value="sedang">Sedang</option>
+                                                <option value="sulit">Sulit</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="Draw" type="checkbox">
+                                        </td>
+                                        <td>
+                                            <a class="button primary hollow">Draw</a>
+                                        </td>
+                                        <td>
+                                            <span class="success label"> Ambil </span>
+                                        </td>
+                                        <td>
+                                            <span class="label warning"> Sedang </span>
+                                        </td>
+                                        <td>
+                                            <select name="control-video">
+                                                <option value="mudah">Mudah</option>
+                                                <option value="sedang">Sedang</option>
+                                                <option value="sulit">Sulit</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <a class="button success">Submit</a>
                         </div>
                     </div>
