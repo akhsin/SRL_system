@@ -26,11 +26,11 @@
             <div id="responsive-menu">
                 <div class="top-bar-right">
                     <ul class="dropdown menu" data-dropdown-menu>
-                        <li><a href="Index.html">Beranda</a></li>
+                        <li><a href="Index.php">Beranda</a></li>
                         <li><a href="Deskripsi.html">Deskripsi</a></li>
-                        <li><a href="Panduan.html">Panduan Sistem</a></li>
+                        <li><a href="panduan.php">Panduan Sistem</a></li>
                         <li><a href="Contact.html">Kontak</a></li>
-                        <li><a href="login/login.html">Login</a></li>
+                        <li><a href="login/login_mhs.php">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="hide-for-small large-4 columns"> &nbsp;</div>
                 <div class="small-12 large-4 columns">
-                    <a class="button success expanded" href="Panduan.html">Apa itu Self-Regulation Learning?</a>
+                    <a class="button success expanded" href="panduan.php">Apa itu Self-Regulation Learning?</a>
                 </div>
                 <div class="hide-for-small large-4 columns"> &nbsp;</div>
             </div>
@@ -64,7 +64,7 @@
     <div class="second-header">
         <div class="row">
             <h2> Self-Regulated Learning </h2>
-            <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet <a href="Panduan.html"> baca selengkapnya </a> </p>
+            <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet <a href="panduan.php"> baca selengkapnya </a> </p>
         </div>
     </div>
     <!-- Description -->

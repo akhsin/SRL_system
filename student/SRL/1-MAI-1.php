@@ -1,3 +1,11 @@
+<?php
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+session_start();
+include("../connect.php");
+if (isset($_SESSION['idlog']) && isset($_SESSION['namalog'])){
+$idlog=$_SESSION['idlog'];
+$namalog=$_SESSION['namalog'];
+?>
 <!DOCTYPE html>
 <html class="" lang="en">
 
@@ -20,15 +28,15 @@
             <div class="sidebar off-canvas position-left reveal-for-large" id="my-info" data-off-canvas="l6sk4l-off-canvas" data-position="left" aria-hidden="true">
                 <div class="profile">
                     <img class="thumbnail circle" src="../../assets/img/profile-example.png">
-                    <h5 class="user name">Sarah</h5>
-                    <h6 class="matriculation id">S1 Teknologi Informasi</h6>
+                    <h5 class="user name"><?php echo $_SESSION['namalog'];?></h5>
+                    <h6 class="matriculation id"><?php echo $_SESSION['idlog'];?></h6>
                 </div>
                 <ul class="nav">
-                    <li><a href="Dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
-                    <li><a href="Deskripsi.html"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
-                    <li><a href="Panduan.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
-                    <li><a href="User-profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
-                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SLR Learning</a></li>
+                    <li><a href="../dashboard.php"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="../student/deskripsi.php"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
+                    <li><a href="panduan.php"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
+                    <li><a href="user-profile.php"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SRL</a></li>
                     <li><a href="#"><i class="fa fa-unlock"></i> Logout</a></li>
                 </ul>
             </div>
@@ -92,7 +100,7 @@
                                     <tr>
                                         <td><code>1</code></td>
                                         <td>
-                                            Saya bertanya kepada diri sendiri "Apakah Saya Sudah Mencapai Tujuan Saya?", Ketika sedang berupaya mencapai tujuan secara  intensif.
+                                            Saya bertanya kepada diri sendiri, "Apakah Saya Sudah Mencapai Tujuan Saya?", Ketika sedang berupaya mencapai tujuan secara  intensif.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -102,13 +110,13 @@
                                                     <span class="switch-active" aria-hidden="true">Y</span>
                                                     <span class="switch-inactive" aria-hidden="true">N</span>
                                                 </label>
-                                            </div>
+                                            </div>  
                                         </td>
                                     </tr>
                                     <tr>
                                         <td><code>2</code></td>
                                         <td>
-                                            Saya Mempertimbangkan Berbagai Pilihan Sebelum Saya Menyelesaikan Sebuah Permasalahan
+                                            Saya mempertimbangkan berbagai pilihan sebelum saya menyelesaikan sebuah permasalahan.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -124,7 +132,7 @@
                                     <tr>
                                         <td><code>3</code></td>
                                         <td>
-                                            Saya coba menggunakan cara-cara yang pernah saya pakai sebelumnya
+                                            Saya terus menerus mengatur diri selama belajar agar memiliki waktu yang cukup.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -140,7 +148,7 @@
                                     <tr>
                                         <td><code>4</code></td>
                                         <td>
-                                            Saya terus menerus mengatur diri selama belajar agar memiliki waktu yang cukup.
+                                            Saya berpikir tentang apa yang sebenarnya perlu saya pelajari sebelum mengerjakan tugas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -156,7 +164,7 @@
                                     <tr>
                                         <td><code>5</code></td>
                                         <td>
-                                            Saya memahami kekuatan dan kelemahan kecerdasan saya.
+                                            Saya menyadari bagaimana baiknya saya menyelesaikan suatu tes.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -172,7 +180,7 @@
                                     <tr>
                                         <td><code>6</code></td>
                                         <td>
-                                            Saya berpikir tentang apa yang sebenarnya perlu saya pelajari sebelum mengerjakan tugas.
+                                            Saya menyusun tujuan-tujuan khusus sebelum saya mengerjakan tugas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -188,7 +196,7 @@
                                     <tr>
                                         <td><code>7</code></td>
                                         <td>
-                                            Saya menyadari bagaimana baiknya saya menyelesaikan suatu tes.
+                                            Saya bertindak perlahan-lahan dan hati-hati bila mana menjumpai informasi penting.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -201,22 +209,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td><code>8</code></td>
-                                        <td>
-                                            Saya menyusun tujuan-tujuan khusus sebelum saya mengerjakan tugas.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="yes-no">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                             <ul class="pagination text-center" role="navigation" aria-label="Pagination" id="page-selection">
@@ -226,9 +219,7 @@
                                 <li><a href="1-MAI-3.php" aria-label="Page 3">3</a></li>
                                 <li><a href="1-MAI-4.php" aria-label="Page 4">4</a></li>
                                 <li><a href="1-MAI-5.php" aria-label="Page 5">5</a></li>
-                                <li><a href="1-MAI-6.php" aria-label="Page 6">6</a></li>
-                                <li><a href="1-MAI-7.php" aria-label="Page 7">7</a></li>
-                                <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                                <li class="pagination-next"><a href="1-MAI-2.php" aria-label="Next page">Next</a></li>
                             </ul>
                         </div>
                     </div>
@@ -252,3 +243,10 @@
 </body>
 
 </html>
+</html>
+<?php } 
+else
+{
+header('location:../login/login_mhs.php');
+}
+?>
