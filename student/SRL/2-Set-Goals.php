@@ -156,34 +156,34 @@
                     </tbody>
                   </table> -->
 <!--                 <a class="button success">Submit</a> -->
-           <div class="small-12 large-12 columns">
-                                        <div class="row top bottom space">
-                                            <div class="small-12 large-4 columns text-center">
-                                             <img class="thumbnail" src="../../assets/img/data.png" alt="data icon">
-                                             <h5> Data Structure dan ADT </h5>
-                                             <hr width="50%">
-                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
-                                             <a class="expanded button" href="#0">Ambil Materi</a>
-                                             <a class="expanded warning button" href="#0">Lewati Materi</a>
-                                            </div>
+             <div class="small-12 large-12 columns">
+                                          <div class="row top bottom space">
+                                              <div class="small-12 large-4 columns text-center">
+                                               <img class="thumbnail" src="../../assets/img/data.png" alt="data icon">
+                                               <h5> Data Structure dan ADT </h5>
+                                               <hr width="50%">
+                                               <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                               <a class="expanded button" href="#0">Ambil Materi</a>
+                                               <a class="expanded warning button" href="#0">Lewati Materi</a>
+                                              </div>
+                                               <div class="small-12 large-4 columns text-center">
+                                               <img class="thumbnail" src="../../assets/img/stack.png" alt="data icon">
+                                               <h5> Tumpukan (Stack) </h5>
+                                               <hr width="50%">
+                                               <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                               <a class="expanded button" href="#0">Ambil Materi</a>
+                                               <a class="expanded warning button" href="#0">Lewati Materi</a>
+                                              </div>
                                              <div class="small-12 large-4 columns text-center">
-                                             <img class="thumbnail" src="../../assets/img/stack.png" alt="data icon">
-                                             <h5> Tumpukan (Stack) </h5>
-                                             <hr width="50%">
-                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
-                                             <a class="expanded button" href="#0">Ambil Materi</a>
-                                             <a class="expanded warning button" href="#0">Lewati Materi</a>
-                                            </div>
-                                           <div class="small-12 large-4 columns text-center">
-                                             <img class="thumbnail" src="../../assets/img/queue.png" alt="data icon">
-                                             <h5> Antrian (Queue) </h5>
-                                             <hr width="50%">
-                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
-                                             <a class="expanded button" href="#0">Ambil Materi</a>
-                                             <a class="expanded warning button" href="#0">Lewati Materi</a>
-                                            </div>
-                                           </div>
-                                        </div>
+                                               <img class="thumbnail" src="../../assets/img/queue.png" alt="data icon">
+                                               <h5> Antrian (Queue) </h5>
+                                               <hr width="50%">
+                                               <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                               <a class="expanded button" href="#0">Ambil Materi</a>
+                                               <a class="expanded warning button" href="#0">Lewati Materi</a>
+                                              </div>
+                                             </div>
+                                          </div>
                                     </div>
 
 
