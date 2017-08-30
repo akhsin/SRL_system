@@ -1,3 +1,11 @@
+<?php
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+session_start();
+include("../connect.php");
+if (isset($_SESSION['idlog']) && isset($_SESSION['namalog'])){
+$idlog=$_SESSION['idlog'];
+$namalog=$_SESSION['namalog'];
+?>
 <!DOCTYPE html>
 <html class="" lang="en">
 
@@ -15,34 +23,106 @@
 </head>
 
 <body>
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
-            <div class="sidebar off-canvas position-left reveal-for-large" id="my-info" data-off-canvas="l6sk4l-off-canvas" data-position="left" aria-hidden="true">
-                <div class="profile">
-                    <img class="thumbnail circle" src="../../assets/img/profile-example.png">
-                    <h5 class="user name">Sarah</h5>
-                    <h6 class="matriculation id">S1 Teknologi Informasi</h6>
-                </div>
-                <ul class="nav">
-                    <li><a href="Dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
-                    <li><a href="Deskripsi.html"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
-                    <li><a href="Panduan.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
-                    <li><a href="User-profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
-                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SLR Learning</a></li>
-                    <li><a href="#"><i class="fa fa-unlock"></i> Logout</a></li>
-                </ul>
-            </div>
-            <div class="main off-canvas-content" data-off-canvas-content="">
-                <div class="title-bar hide-for-large">
-                    <div class="title-bar-left">
-                        <button class="menu-icon" type="button" data-open="my-info" aria-expanded="false" aria-controls="my-info"></button>
-                        <span class="title-bar-title">Sarah Ng</span>
-                    </div>
-                </div>
-                <div class="row main-wrapper rounded">
-                    <div class="row top space">
-                        <div class="columns">
-                            <div class="top-bar">
+<!-- modal -->
+<div class="large reveal" id="exampleModal1" data-reveal>
+<div class="row"> 
+<div class="large-4 small-12 columns">
+          <img class="thumbnail" src="../../assets/img/teacher.png">
+</div>
+<div class="large-8 small-12 columns">
+    <h2> Hi Akhsin ! </h2>
+    <h3> Pertama kali and harus mengisi kuisioner ... </h3>
+    <br/>
+    <p> Kusioner Metacognitive Awareness Inventory (MAI) adalah berguna untuk .... </p>
+</div>
+</div>
+</div>
+
+<!-- navbar -->
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+  <div class="row">
+  <div class="top-bar-left">
+ 
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li> <button class="expanded button" type="button" data-toggle="timeline"><i class="fa fa-tasks" aria-hidden="true"></i> Progress SRL</button> </li>
+      <li> <button class="expanded success button" type="button" data-toggle="status"><i class="fa fa-check-square-o" aria-hidden="true"></i> Status Pembelajaran </button></li>
+      <li> <button class="expanded warning button" type="button" data-toggle="pedagogical-agent"><i class="fa fa-comments-o" aria-hidden="true"></i>
+Bantuan <span class="primary badge">0</span> </button></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+        <li> 00 : 00 </li>
+      <li><a data-toggle="offCanvasLeft"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+      </div>
+</div>
+<!-- Learning Status -->
+<div class="dropdown-pane" id="status" data-dropdown>
+  <div class="row"> 
+  <div class="large-3 small-12 columns">
+      <img class="thumbnail circle" src="../../assets/img/profile-example.png">
+        <h5 class="user name"><?php echo $_SESSION['namalog'];?></h5>
+        <h6 class="matriculation id"><?php echo $_SESSION['idlog'];?></h6>
+        <h6> Total Waktu Belajar: <br> 1 Jam 56 Menit </h6>
+  </div> <!-- kiri -->
+
+    <div class="large-9 small-12 columns">
+    <h5> Learning Progress </h5>
+    <hr>
+        <table>
+  <thead>
+    <tr>
+      <th width="10%">Nomor </th>
+      <th width="60%">Materi</th>
+      <th width="20%">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Sorting 1</td>
+      <td><span class="success label">Sudah</span></td>
+    </tr>
+      <tr>
+      <td>2</td>
+      <td>Sorting 2</td>
+      <td><span class="warning label">in progress</span></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div> <!-- row -->
+</div>
+<!-- pedagogical chat -->
+<div class="dropdown-pane" id="pedagogical-agent" data-dropdown>
+  <div class="chat-body"> 
+    <img class="thumbnail circle" src="../../assets/img/profile-example.png">
+    <div class="callout primary ">
+  <p>Halo Akhsin! Jika ada sesuatu yang ditanyakan, silahkan hubungi kami.</p>
+</div>
+  </div>
+  <div class="input-chat"> 
+    <form>
+        <div class="input-group">
+    <input class="input-group-field" type="text">
+    <div class="input-group-button">
+      <button type="submit" class="button"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
+    </div>
+  </div>
+    </form>
+  </div>
+</div>
+<!-- timeline status -->
+<div class="dropdown-pane" id="timeline" data-dropdown>
+<h2 align="center"> Self-Regulation Learning Progress </h2>
+<hr>
                                 <ol class="timeline">
                                     <li class="timeline">
                                         MAI Tes
@@ -73,13 +153,42 @@
                                         <span class="details">Description of point 7</span>
                                     </li>
                                 </ol>
+                                </div>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="sidebar off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+                <div class="profile">
+                    <img class="thumbnail circle" src="../../assets/img/profile-example.png">
+                    <h5 class="user name"><?php echo $_SESSION['namalog'];?></h5>
+                    <h6 class="matriculation id"><?php echo $_SESSION['idlog'];?></h6>
+                </div>
+                <ul class="nav">
+                    <li><a href="../dashboard.php"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="../student/deskripsi.php"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
+                    <li><a href="panduan.php"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
+                    <li><a href="user-profile.php"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SRL</a></li>
+                    <li><a href="#"><i class="fa fa-unlock"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="main off-canvas-content" data-off-canvas-content>
+                <div class="title-bar hide-for-large">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" type="button" data-open="my-info" aria-expanded="false" aria-controls="my-info"></button>
+                        <span class="title-bar-title">Sarah Ng</span>
+                    </div>
+                </div>
+                <div class="row main-wrapper rounded">
+                    <div class="row top space">
+                        <div class="columns">
+                            <div class="top-bar">
+                             <h2 style="display: block;" align="center">Monitoring of Metacognitive Awareness Test</h2>
+                            <hr width="75%" />
                             </div>
                         </div>
                     </div>
                     <div class="columns main-wrapper rounded shadow">
                         <div class="page heading">
-                            <h2 style="display: block;" align="center">Monitoring of Metacognitive Awareness Test</h2>
-                            <hr width="75%" />
                             <table class="projects table" id="content">
                                 <thead>
                                     <tr>
@@ -92,7 +201,7 @@
                                     <tr>
                                         <td><code>1</code></td>
                                         <td>
-                                            Saya bertanya kepada diri sendiri "Apakah Saya Sudah Mencapai Tujuan Saya?", Ketika sedang berupaya mencapai tujuan secara  intensif.
+                                            Saya bertanya kepada diri sendiri, "Apakah Saya Sudah Mencapai Tujuan Saya?", Ketika sedang berupaya mencapai tujuan secara  intensif.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -102,13 +211,13 @@
                                                     <span class="switch-active" aria-hidden="true">Y</span>
                                                     <span class="switch-inactive" aria-hidden="true">N</span>
                                                 </label>
-                                            </div>
+                                            </div>  
                                         </td>
                                     </tr>
                                     <tr>
                                         <td><code>2</code></td>
                                         <td>
-                                            Saya Mempertimbangkan Berbagai Pilihan Sebelum Saya Menyelesaikan Sebuah Permasalahan
+                                            Saya mempertimbangkan berbagai pilihan sebelum saya menyelesaikan sebuah permasalahan.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -124,7 +233,7 @@
                                     <tr>
                                         <td><code>3</code></td>
                                         <td>
-                                            Saya coba menggunakan cara-cara yang pernah saya pakai sebelumnya
+                                            Saya terus menerus mengatur diri selama belajar agar memiliki waktu yang cukup.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -140,7 +249,7 @@
                                     <tr>
                                         <td><code>4</code></td>
                                         <td>
-                                            Saya terus menerus mengatur diri selama belajar agar memiliki waktu yang cukup.
+                                            Saya berpikir tentang apa yang sebenarnya perlu saya pelajari sebelum mengerjakan tugas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -156,7 +265,7 @@
                                     <tr>
                                         <td><code>5</code></td>
                                         <td>
-                                            Saya memahami kekuatan dan kelemahan kecerdasan saya.
+                                            Saya menyadari bagaimana baiknya saya menyelesaikan suatu tes.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -172,7 +281,7 @@
                                     <tr>
                                         <td><code>6</code></td>
                                         <td>
-                                            Saya berpikir tentang apa yang sebenarnya perlu saya pelajari sebelum mengerjakan tugas.
+                                            Saya menyusun tujuan-tujuan khusus sebelum saya mengerjakan tugas.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -188,23 +297,7 @@
                                     <tr>
                                         <td><code>7</code></td>
                                         <td>
-                                            Saya menyadari bagaimana baiknya saya menyelesaikan suatu tes.
-                                        </td>
-                                        <td>
-                                            <div class="switch large">
-                                                <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
-                                                <label class="switch-paddle" for="yes-no">
-                                                    <span class="show-for-sr">Do you like me?</span>
-                                                    <span class="switch-active" aria-hidden="true">Y</span>
-                                                    <span class="switch-inactive" aria-hidden="true">N</span>
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>8</code></td>
-                                        <td>
-                                            Saya menyusun tujuan-tujuan khusus sebelum saya mengerjakan tugas.
+                                            Saya bertindak perlahan-lahan dan hati-hati bila mana menjumpai informasi penting.
                                         </td>
                                         <td>
                                             <div class="switch large">
@@ -226,9 +319,7 @@
                                 <li><a href="1-MAI-3.php" aria-label="Page 3">3</a></li>
                                 <li><a href="1-MAI-4.php" aria-label="Page 4">4</a></li>
                                 <li><a href="1-MAI-5.php" aria-label="Page 5">5</a></li>
-                                <li><a href="1-MAI-6.php" aria-label="Page 6">6</a></li>
-                                <li><a href="1-MAI-7.php" aria-label="Page 7">7</a></li>
-                                <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                                <li class="pagination-next"><a href="1-MAI-2.php" aria-label="Next page">Next</a></li>
                             </ul>
                         </div>
                     </div>
@@ -243,12 +334,22 @@
     <script>
     $(document).foundation();
             // init bootpag
-        $('#page-selection').bootpag({
-            total: 7
-        }).on("page", function(event, /* page number here */ num){
-             $("#content").html("Insert content"); // some ajax content loading...
-        });
+        // $('#page-selection').bootpag({
+        //     total: 7
+        // }).on("page", function(event,  page number here  num){
+        //      $("#content").html("Insert content"); // some ajax content loading...
+        // });
+        $(window).load(function(){        
+            $('#exampleModal1').foundation('open');
+    }); 
     </script>
 </body>
 
 </html>
+</html>
+<?php } 
+else
+{
+header('location:../login/login_mhs.php');
+}
+?>

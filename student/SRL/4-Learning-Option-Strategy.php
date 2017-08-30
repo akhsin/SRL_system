@@ -25,15 +25,15 @@
             <div class="sidebar off-canvas position-left reveal-for-large" id="my-info" data-off-canvas="l6sk4l-off-canvas" data-position="left" aria-hidden="true">
                 <div class="profile">
                     <img class="thumbnail circle" src="../../assets/img/profile-example.png">
-                    <h5 class="user name">Sarah</h5>
-                    <h6 class="matriculation id">S1 Teknologi Informasi</h6>
+                    <h5 class="user name"><?php echo $_SESSION['namalog'];?></h5>
+                    <h6 class="matriculation id"><?php echo $_SESSION['idlog'];?></h6>
                 </div>
                 <ul class="nav">
-                    <li><a href="Dashboard.html"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
-                    <li><a href="Deskripsi.html"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
-                    <li><a href="Panduan.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
-                    <li><a href="User-profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
-                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SLR Learning</a></li>
+                    <li><a href="dashboard.php"><i class="fa fa-dashboard" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="../student/deskripsi.php"><i class="fa fa-info" aria-hidden="true"></i>Deskripsi</a></li>
+                    <li><a href="panduan.php"><i class="fa fa-question-circle" aria-hidden="true"></i>Panduan</a></li>
+                    <li><a href="user-profile.php"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>SRL</a></li>
                     <li><a href="#"><i class="fa fa-unlock"></i> Logout</a></li>
                 </ul>
             </div>
@@ -82,86 +82,33 @@
                         </div>
                     </div>
                     <div class="columns main-wrapper rounded shadow">
-                        <div class="page heading">
-                            <h2 style="display: block;" align="center">Pilih Strategy Belajar: Stack</h2>
-                            <table class="projects table">
-                                <thead>
-                                    <tr>
-                                        <th width="10%">Ambil ?</th>
-                                        <th>Strategy</th>
-                                        <th width="10%"> Rekomendasi </th>
-                                        <th width="25%"> Rekomendasi Kesulitan </th>
-                                        <th>Tingkat Kesulitan</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input id="control-video" type="checkbox">
-                                        </td>
-                                        <td>
-                                            <a class="button primary hollow">Control Video</a>
-                                        </td>
-                                        <td>
-                                            <span class="label success"> Ambil </span>
-                                        </td>
-                                        <td>
-                                            <span class="label warning"> Sedang </span>
-                                        </td>
-                                        <td>
-                                            <select name="control-video">
-                                                <option value="mudah">Mudah</option>
-                                                <option value="sedang">Sedang</option>
-                                                <option value="sulit">Sulit</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input id="Summary" type="checkbox">
-                                        </td>
-                                        <td>
-                                            <a class="button primary hollow">Summary</a>
-                                        </td>
-                                        <td>
-                                            <span class="label success"> Ambil </span>
-                                        </td>
-                                        <td>
-                                            <span class="label warning"> Sedang </span>
-                                        </td>
-                                        <td>
-                                            <select name="Summary">
-                                                <option value="mudah">Mudah</option>
-                                                <option value="sedang">Sedang</option>
-                                                <option value="sulit">Sulit</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input id="Draw" type="checkbox">
-                                        </td>
-                                        <td>
-                                            <a class="button primary hollow">Draw</a>
-                                        </td>
-                                        <td>
-                                            <span class="success label"> Ambil </span>
-                                        </td>
-                                        <td>
-                                            <span class="label warning"> Sedang </span>
-                                        </td>
-                                        <td>
-                                            <select name="control-video">
-                                                <option value="mudah">Mudah</option>
-                                                <option value="sedang">Sedang</option>
-                                                <option value="sulit">Sulit</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a class="button success">Submit</a>
-                        </div>
+                                    <h2 style="display: block;" align="center">Learning Option Strategy : stack</h2>
+                <hr width="75%"/>
+                        <div class="small-12 large-12 columns">
+                                        <div class="row top bottom space">
+                                            <div class="small-12 large-4 columns text-center">
+                                             <img class="thumbnail" src="../../assets/img/video.png" alt="data icon">
+                                             <h5> Control Video </h5>
+                                             <hr width="50%">
+                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                             <a class="expanded button" href="#0">Ambil Startegy</a>
+                                            </div>
+                                             <div class="small-12 large-4 columns text-center">
+                                             <img class="thumbnail" src="../../assets/img/draw.png" alt="data icon">
+                                             <h5> Draw </h5>
+                                             <hr width="50%">
+                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                             <a class="expanded button" href="#0">Ambil Strategy</a>
+                                            </div>
+                                           <div class="small-12 large-4 columns text-center">
+                                             <img class="thumbnail" src="../../assets/img/summary.png" alt="data icon">
+                                             <h5> Summarization </h5>
+                                             <hr width="50%">
+                                             <p> Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+                                             <a class="expanded button" href="#0">Ambil Strategy</a>
+                                            </div>
+                                           </div>
+                                        </div>
                     </div>
                 </div>
                 <div class="js-off-canvas-exit"></div>

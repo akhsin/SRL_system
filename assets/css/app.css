@@ -721,3 +721,42 @@ User Profile Page
 .footer label {
     color: white;
 }
+/* chat box */
+#pedagogical-agent {
+    min-width: 600px;
+}
+.chat-body {
+    height: 400px;
+    margin: 2px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.chat-body img {
+    width: 75px;
+    float: left;
+}
+
+.chat-body .callout {
+    padding: 0;
+    margin: 0;
+    position: static;
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+
+/* Customizing Foundations */
+#timeline {
+    min-width: 1100px;
+}
+
+#status {
+    min-width: 800px;
+}
+
+.menu  li {
+    display: inline-block;
+}
